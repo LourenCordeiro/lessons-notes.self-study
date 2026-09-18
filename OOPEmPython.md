@@ -236,4 +236,10 @@ if __name__ == '__main__':
 
 
 ## POLIMORFISMO ##
+(O Python visa emitir o Polimorfismo sem a necessidade de Herança)
 
+Propriedade ou estado daquilo que se apresenta e/ou se comporta de várias formas diferentes. "Único nome mas comportamentos diferentes".
+
+##Function Overload
+
+##Operator Overload
