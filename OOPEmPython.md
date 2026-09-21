@@ -246,7 +246,12 @@ Propriedade ou estado daquilo que se apresenta e/ou se comporta de várias forma
 
 - Polimorfismo por Inclusão (Override/Subtyping): É quando um método subscreve um método da mãe(Herança).   -> Aceito pelo Python
 - Polimorfismo por Sobrecarga (Ad-Hoc Overloading): Para finalidade de sobrecarga.                          -> Aceito pelo Python
+Nesse caso pode ser utilizado para sobrecarga de métodos, onde os métodos possuem os mesmos nomes mas com assinaturas diferentes. 
 - Polimorfismo de Coerção (Ad-Hoc Coercion)
 - Polimorfismo Paramétrico(Template/Generic)
 
 O Python utiliza os tipos Inclusão, Sobrecarga e "Duck Typing".
+
+<img width="1228" height="692" alt="image" src="https://github.com/user-attachments/assets/e89b8d8b-f19b-41ce-82c6-fdf67689ef87" />
+*Métodos mágicos para sobrecarga os operadores em Python.*
+
