@@ -255,3 +255,7 @@ O Python utiliza os tipos Inclusão, Sobrecarga e "Duck Typing".
 <img width="1228" height="692" alt="image" src="https://github.com/user-attachments/assets/e89b8d8b-f19b-41ce-82c6-fdf67689ef87" />
 *Métodos mágicos para sobrecarga os operadores em Python.*
 
+## POLIMORFISMO "DUCK TYPING ##
+
+"Se parece um pato, nada como um pato, voa como um pato e faz 'quack', então provavelmente é um pato"
+Jeio pythónico de polimorfismo: não importo o tipo de objeto, importa se ele sabe fazer alguma coisa.
