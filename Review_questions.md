@@ -103,9 +103,35 @@ bloco contínuo, mas quebrados em pequenos pacotes. Cada pacote carrega o endere
 de origem e de destino e pode seguir um caminho diferente pela rede. No destino, eles são
 remontados na ordem certa.
 <img width="1417" height="435" alt="image" src="https://github.com/user-attachments/assets/99147e7a-55d6-4956-8df5-61c0ac6b5047" />
+<img width="1331" height="582" alt="image" src="https://github.com/user-attachments/assets/c084bcb2-e694-40e9-be15-48c85551c09f" />
+
 
 ## O que é a arquitetura Cliente-Servidor? ## 
+É um modelo de arquitetura distribuída em que as responsabilidades são divididas
+entre dois papéis:
+• Cliente: quem inicia a comunicação e faz pedidos. Pode ser um navegador, um app
+de celular ou outro serviço.
+• Servidor: quem fica esperando pedidos, processa e responde. Concentra os dados e
+as regras de negócio.
+A comunicação segue o padrão requisição-resposta (request-response): o cliente
+sempre inicia, e o servidor sempre responde.
+<img width="1412" height="470" alt="image" src="https://github.com/user-attachments/assets/484c09d3-32ab-418a-bb09-21995d8fe3db" />
+
 ## O que é I/O? ## 
+I/O (Input/Output, entrada e saída) é toda operação em que um programa troca dados
+com algo fora da CPU e da memória principal: disco, rede, teclado, tela, banco de
+dados, filas de mensagens.
+- Ler ou gravar um arquivo.
+- Consultar um banco de dados.
+- Chamar uma API pela rede.
+- Publicar ou consumir uma mensagem numa fila.
+- Ler o que o usuário digita: o input() é uma operação de I/O.
+
+1-I/O-bound: o tempo é dominado pela espera de I/O. É o caso da grande maioria das
+APIs web, que passam o tempo esperando o banco e outros serviços.
+2-CPU-bound: o tempo é dominado por cálculo, como processar imagens, compactar
+arquivos ou treinar modelos.
+
 ## O que é assincronidade e como ajuda no I/O? ## 
 ## O que é, de fato, uma API? ## 
 ## O que é o padrão REST? ## 
