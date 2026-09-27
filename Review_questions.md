@@ -133,7 +133,47 @@ APIs web, que passam o tempo esperando o banco e outros serviços.
 arquivos ou treinar modelos.
 
 ## O que é assincronidade e como ajuda no I/O? ## 
+Em um modelo síncrono, cada operação precisa terminar antes que a próxima comece.
+Se a operação é de I/O, a execução fica bloqueada esperando.
+Em um modelo assíncrono, quando uma operação de I/O é iniciada, o programa não
+espera parado: ele registra que quer ser avisado quando o resultado chegar e segue
+executando outras tarefas. Isso é chamado de I/O não bloqueante.
+Um conceito acadêmico importante aqui é a diferença entre concorrência e paralelismo.
+Concorrência é lidar com várias tarefas ao mesmo tempo, intercalando-as; paralelismo é
+executar várias tarefas literalmente ao mesmo tempo, em núcleos diferentes. O código
+assíncrono é concorrente: uma única thread alterna entre muitas tarefas, aproveitando os
+momentos de espera.
+
+*EVENT LOOP*
+Quem coordena tudo isso é o event loop (laço de eventos). Ele mantém uma fila de
+tarefas e repete o ciclo: executa uma tarefa até ela precisar esperar I/O (o await), guarda
+o ponto onde ela parou, passa para a próxima tarefa pronta e, quando o sistema
+operacional avisa que um I/O terminou, coloca a tarefa correspondente de volta na fila.
+
+<img width="1392" height="490" alt="image" src="https://github.com/user-attachments/assets/d58fb5a1-5791-4db1-9b3b-3b30e307056f" />
+
+
 ## O que é, de fato, uma API? ## 
+API significa Application Programming Interface (Interface de Programação de Aplicações).
+É um contrato que define como um componente de software pode ser usado por outro:
+quais operações existem, que dados cada uma recebe, o que devolve e quais erros podem
+acontecer.
+O conceito acadêmico central por trás de uma API é o encapsulamento, ou ocultação de
+informação (information hiding, termo de David Parnas, 1972): quem usa a API depende
+apenas da interface, nunca da implementação. Isso permite trocar o banco de dados,
+reescrever a lógica ou mudar de linguagem sem afetar quem consome, desde que o
+contrato seja mantido.
+<img width="1381" height="361" alt="image" src="https://github.com/user-attachments/assets/b68ce6c1-85d9-46d5-9ef8-09a97a248cfb" />
+
+*Características de uma boa API*
+
+- Contrato claro e documentado: quem consome sabe exatamente o que enviar e o
+que esperar.
+- Estabilidade: mudanças que quebram clientes exigem uma nova versão (por exemplo,
+/v2/pedidos).
+- Erros previsíveis: formatos e códigos de erro consistentes.
+- Segurança: autenticação, autorização e limites de uso (rate limiting).
+
 ## O que é o padrão REST? ## 
 ## O que é o protocolo HTTP? ## 
 ## Quais são os principais Métodos (ou Verbos) HTTP? ## 
