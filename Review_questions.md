@@ -201,7 +201,30 @@ detectadas). Em HTTP puro, senhas e tokens trafegam em texto aberto.*
 <img width="1395" height="391" alt="image" src="https://github.com/user-attachments/assets/6c85d66c-0327-4979-89f9-52e14a4706cd" />
 
 ## Quais são os principais Métodos (ou Verbos) HTTP? ##
+O método indica a intenção da requisição: o que o cliente quer fazer com o recurso
+identificado pela URL. A RFC 9110 classifica os métodos por duas propriedades formais,
+essenciais para entender o comportamento de cada um:
+- Seguro (safe): o método não altera o estado do servidor; é somente leitura.
+- Idempotente: executar a mesma requisição uma ou várias vezes produz o mesmo
+efeito final no servidor. Formalmente, f(f(x)) = f(x).
 
-## O que são os Códigos de Status HTTP? ## 
+*Os métodos HTTP expressam a intenção da requisição: GET lê, POST cria, PUT substitui,
+PATCH atualiza parcialmente e DELETE remove. As propriedades de segurança e
+idempotência determinam quando é seguro repetir uma requisição.*
+
+## O que são os Códigos de Status HTTP? (status code) ## 
+O código de status é um número de três dígitos, presente em toda resposta HTTP, que
+informa o resultado da requisição. O primeiro dígito define a classe da resposta, o
+que permite a qualquer cliente entender o resultado geral mesmo sem conhecer o código
+específico. A especificação está na RFC 9110.
+
+<img width="1382" height="420" alt="image" src="https://github.com/user-attachments/assets/f656397e-53ba-4348-a411-9aa61e25689d" />
+
+<img width="1105" height="797" alt="image" src="https://github.com/user-attachments/assets/748f1d13-7aaa-49f9-aba7-edccb9a60067" />
+<img width="1381" height="271" alt="image" src="https://github.com/user-attachments/assets/11e6df7e-c8de-4a7b-81ba-71a731ab0831" />
+
+*Uma confusão comum: 401 significa "não sei quem você é" (falta autenticação), enquanto
+403 significa "sei quem você é, mas você não pode fazer isso" (falta autorização).*
+
 ## O que é JSON? ## 
 ## O que é um Framework web? ## 
