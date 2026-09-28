@@ -175,8 +175,33 @@ que esperar.
 - Segurança: autenticação, autorização e limites de uso (rate limiting).
 
 ## O que é o padrão REST? ## 
+REST (Representational State Transfer) é um estilo arquitetural para sistemas
+distribuídos, definido por Roy Fielding em sua tese de doutorado em 2000. Fielding
+também foi um dos autores da especificação do HTTP, e o REST descreve os princípios que
+fizeram a web escalar. Não é um protocolo, biblioteca ou formato: é um conjunto de
+restrições que, quando seguidas, geram sistemas simples, escaláveis e evolutivos.
+
+<img width="1398" height="767" alt="image" src="https://github.com/user-attachments/assets/ae62b53f-380d-4b04-b714-399f085e8e32" />
+
 ## O que é o protocolo HTTP? ## 
-## Quais são os principais Métodos (ou Verbos) HTTP? ## 
+HTTP (HyperText Transfer Protocol) é o protocolo da camada de aplicação que define
+como clientes e servidores trocam mensagens na web. Foi criado por Tim Berners-Lee no
+CERN, entre 1989 e 1991, e hoje sua semântica é especificada na RFC 9110. Ele roda
+sobre um protocolo de transporte: TCP nas versões 1.1 e 2, e QUIC na versão 3.
+Suas características fundamentais são: modelo requisição-resposta (o cliente sempre
+inicia), stateless (cada requisição é independente) e extensível por meio de headers.
+
+<img width="1407" height="583" alt="image" src="https://github.com/user-attachments/assets/a27f7235-68f6-466b-a3b5-44db50a6b3a8" />
+
+*O HTTPS é o HTTP transportado dentro de uma camada TLS, que garante três
+propriedades: confidencialidade (os dados são criptografados), autenticidade (o
+certificado prova que o servidor é quem diz ser) e integridade (alterações no caminho são
+detectadas). Em HTTP puro, senhas e tokens trafegam em texto aberto.*
+
+<img width="1395" height="391" alt="image" src="https://github.com/user-attachments/assets/6c85d66c-0327-4979-89f9-52e14a4706cd" />
+
+## Quais são os principais Métodos (ou Verbos) HTTP? ##
+
 ## O que são os Códigos de Status HTTP? ## 
 ## O que é JSON? ## 
 ## O que é um Framework web? ## 
