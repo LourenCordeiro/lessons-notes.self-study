@@ -227,4 +227,41 @@ específico. A especificação está na RFC 9110.
 403 significa "sei quem você é, mas você não pode fazer isso" (falta autorização).*
 
 ## O que é JSON? ## 
+JSON (JavaScript Object Notation) é um formato textual de serialização de dados,
+leve e independente de linguagem, especificado na RFC 8259 e popularizado por Douglas
+Crockford no início dos anos 2000. Apesar de a sintaxe vir do JavaScript, praticamente
+todas as linguagens leem e geram JSON, e ele se tornou o formato padrão de troca de
+dados em APIs web, substituindo em grande parte o XML.
+Serialização é o processo de transformar uma estrutura de dados da memória (um
+objeto, um dict) em uma sequência de bytes ou texto que pode ser armazenada ou
+transmitida. Desserialização é o caminho inverso.
+
+*JSON não tem tipo de data: datas trafegam como string, de preferência no formato ISO
+8601 (2026-09-24T14:30:00Z). Também não aceita comentários, aspas simples nem
+vírgula após o último item.*
+
+<img width="1382" height="402" alt="image" src="https://github.com/user-attachments/assets/8259d09a-65e6-4d31-9f3e-6ff869aa2571" />
+
+*JSON é um formato de texto leve e universal para representar dados estruturados, com
+seis tipos: objeto, array, string, número, booleano e nulo. É o formato padrão de troca de
+dados em APIs e mensageria.*
+
 ## O que é um Framework web? ## 
+Um framework é uma estrutura de software reutilizável e extensível, que fornece a
+arquitetura base de uma aplicação e define pontos onde o desenvolvedor insere o código
+específico do seu domínio. Um framework web é especializado em aplicações e APIs que
+se comunicam por HTTP.
+A característica que distingue um framework de uma biblioteca é a inversão de controle
+(Inversion of Control), também chamada de princípio de Hollywood: "não nos ligue, nós
+ligamos para você". Com uma biblioteca, o seu código chama a biblioteca quando quer.
+Com um framework, o framework chama o seu código no momento certo, por exemplo
+quando chega uma requisição para determinada rota.
+
+<img width="1472" height="355" alt="image" src="https://github.com/user-attachments/assets/20abbfe5-d082-4959-b712-04d0c4d091cc" />
+<img width="1405" height="642" alt="image" src="https://github.com/user-attachments/assets/7e0ef98f-f458-4caf-97ea-7bc6eca80fee" />
+<img width="1407" height="536" alt="image" src="https://github.com/user-attachments/assets/2ebbb8f1-2ca1-457a-b71d-37f63a0c458d" />
+
+*Um framework web é uma estrutura pronta que cuida do HTTP, do roteamento, da
+validação, da serialização e dos erros, e chama o seu código no momento certo (inversão
+de controle), para que você se concentre na regra de negócio.*
+
